@@ -1,0 +1,10 @@
+that document will contain notes and commands used in devops session 3 
+
+How to write to txt file :- 
+to write to txt file just use vim note.txt
+to save the file just press scape and press :x 
+to cancel what you write scape than :qa!
+
+
+
+
