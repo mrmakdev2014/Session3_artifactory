@@ -8,3 +8,13 @@ services:
             container_name : jenkins
             volumes:
               - ./jenkins:/var/jenkins_home:rw
+        
+        tomcat:
+           image: tomcat
+           ports:
+             - 9000:8080
+           container_name: tomcat
+           depends_on:
+             - jenkins
+           volumes:
+             - ./jenkins/workspace/java-test-app-job/target/:/usr/local/tomcat/webapps:rw
